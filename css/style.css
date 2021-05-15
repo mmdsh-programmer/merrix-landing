@@ -1,0 +1,794 @@
+@media (prefers-reduced-motion: no-preference) {
+     :root {
+        scroll-behavior: smooth;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(239px, 1fr));
+    grid-column-gap: 10px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.desktop-break::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.row {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.title {
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4a148c;
+}
+
+.description {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.divider {
+    width: 100%;
+    height: 34px;
+    margin-top: 15px;
+    margin-bottom: 70px;
+    background-image: url("../images/dot_pattrn.png");
+    background-repeat: repeat;
+}
+
+.merrix-page {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+
+/*-----------------------------header-------------------------*/
+
+.merrix-header {
+    width: 100%;
+    background-color: transparent;
+    padding: 24px 0 20px;
+    z-index: 999;
+    position: absolute;
+}
+
+.merrix-header .container {
+    max-width: 1200px;
+}
+
+.merrix-header .container .row {
+    align-items: center;
+}
+
+.merrix-header .nav {
+    padding: unset;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.merrix-header .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.merrix-header .utilities {
+    margin-left: auto;
+}
+
+.merrix-header .utilities .nav .nav-item {
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.merrix-header .logo img,
+.logo {
+    width: 136px;
+    height: 33px;
+}
+
+.merrix-header .logo {
+    margin-right: 340px;
+}
+
+.utilities .nav .nav-item {
+    margin-left: 15px;
+}
+
+.utilities .nav .nav-item:first-child {
+    margin: 0 12px 0 0;
+}
+
+.utilities .nav .nav-item:first-child a {
+    display: flex;
+}
+
+.utilities .nav-item .nav-link .phone {
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.utilities .nav-item .nav-link .phone-number {
+    width: 15px;
+    height: 15px;
+    margin-top: 11px;
+}
+
+.merrix-header .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*-----------------------------header-------------------------*/
+
+
+/*-----------------------------banner-------------------------*/
+
+.merrix-page .banner {
+    width: 100%;
+    height: 1000px;
+    background-image: url("../images/header_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.merrix-page .banner .container {
+    max-width: 1200px;
+    height: 100%;
+}
+
+.merrix-page .banner .container .row {
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .banner-image {
+    width: 524px;
+    height: 322px;
+    object-fit: cover;
+    margin-top: 145px;
+}
+
+.banner .banner-pre-title {
+    width: 282px;
+    height: 32px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 23px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner .banner-title {
+    max-width: 943px;
+    margin: 8px 0 64px 0;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner .banner-button {
+    width: 212px;
+    height: 55px;
+    margin-bottom: 0;
+    padding: 14px 41px 15px 41px;
+    border-radius: 27.5px;
+    box-shadow: 0 11px 14px 0 rgba(0, 0, 0, 0.18);
+    background-color: #d2dc8c;
+    text-decoration: none;
+    color: #1a5334;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    outline: none;
+}
+
+.banner .row .col {
+    width: 240px;
+    height: 300px;
+}
+
+.banner .row .col img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .image-holder {
+    margin-top: 157px;
+    margin-bottom: 83px;
+    position: relative;
+}
+
+
+/*-----------------------------banner-------------------------*/
+
+
+/*-----------------------------products-------------------------*/
+
+.merrix-page .products {
+    width: 100%;
+}
+
+.merrix-page .products .container {
+    max-width: 1200px;
+}
+
+.products .title {
+    margin-top: 278px;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.products .description {
+    max-width: 596px;
+    font-size: 18px;
+    color: #263238;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.merrix-page .products .product-row {
+    width: 100%;
+}
+
+.product-row .title {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.product-row .description {
+    margin-bottom: 30px;
+}
+
+.product-row .row {
+    justify-content: space-between;
+}
+
+.product-row .col {
+    max-width: 100%;
+    margin-bottom: 55px;
+}
+
+.product-row .product-image {
+    width: 100%;
+    height: 75%;
+}
+
+.product-row .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.products .product-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.products .product-description {
+    width: 93%;
+    margin-bottom: 21px;
+    font-size: 16px;
+    color: #546e7a;
+    height: 46px;
+}
+
+.products .see-more {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2962ff;
+    text-decoration: none;
+    border-bottom: 1px solid #2962ff;
+    padding-bottom: 5px;
+}
+
+.products .see-more::after {
+    content: "Click to see samples";
+}
+
+.lightbox {
+    display: none;
+}
+
+
+/*-----------------------------products-------------------------*/
+
+
+/*-----------------------------footer-------------------------*/
+
+.merrix-footer {
+    width: 100%;
+    margin-top: 79px;
+    padding-top: 87px;
+    padding-bottom: 20px;
+    background-color: #d2dc8c;
+}
+
+.merrix-footer .container {
+    max-width: 1200px;
+    height: 100%;
+}
+
+.merrix-footer a {
+    text-decoration: none;
+}
+
+.merrix-footer .love-products {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #880e4f;
+    display: flex;
+    align-items: center;
+}
+
+.merrix-footer .love-products .like {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.merrix-footer .contact-us {
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #006064;
+}
+
+.merrix-footer .footer-title {
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #004d40;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.merrix-footer .footer-description {
+    font-size: 26px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #004d40;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+a.footer-description.mobile {
+    display: block;
+}
+
+a.footer-description.mobile:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+a.footer-description.mobile:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.merrix-footer .social {
+    margin-top: 50px;
+}
+
+.merrix-footer .utilities {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.merrix-footer .utilities .col {
+    width: 320px;
+    margin-bottom: 30px;
+}
+
+.merrix-footer .nav {
+    padding: 0;
+    margin: 4px 0 0 0;
+    flex-wrap: wrap;
+}
+
+.merrix-footer .nav .nav-item {
+    margin-right: 50px;
+}
+
+.merrix-footer .nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.merrix-footer .nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #004d40;
+}
+
+.merrix-footer .nav .nav-item:first-child {
+    margin-left: 0;
+}
+
+.merrix-footer .social-icon {
+    margin-right: 10px;
+    width: 31px;
+    height: 31px;
+}
+
+.merrix-footer .footer-divider {
+    width: 100%;
+    height: 18px;
+    margin-top: 54px;
+    margin-bottom: 0;
+    background-image: url("../images/dot_pattrn.png");
+    background-repeat: repeat-x repeat-y;
+}
+
+.merrix-footer .footer-logo {
+    width: 91px;
+    height: 22px;
+    margin-right: 50px;
+}
+
+.merrix-footer .copyright-container {
+    align-items: center;
+    margin-top: 18px;
+}
+
+.merrix-footer .copyright {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #004d40;
+}
+
+
+/*-----------------------------footer-------------------------*/
+
+
+/*-----------------------------responsive-------------------------*/
+
+@media only screen and (max-width: 1220px) {
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .product-row .row {
+        justify-content: space-between;
+    }
+    .product-row .row::after {
+        content: "";
+        width: 387px;
+    }
+    .merrix-header .logo {
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .products .product-description {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .merrix-header .logo {
+        margin-right: auto;
+    }
+    .banner .banner-image {
+        width: auto;
+    }
+    .merrix-header .nav .nav-item {
+        display: none;
+    }
+    .merrix-header .nav .instagram {
+        display: block;
+        margin-left: 20px;
+    }
+    .merrix-header .nav .nav-item:first-child {
+        display: block;
+    }
+    .banner .banner-image {
+        width: 300px;
+        height: 184px;
+        margin: 85px 0 0 0;
+    }
+    .banner .banner-image {
+        width: 480px;
+        height: 294px;
+    }
+    .banner .row .col {
+        width: 20%;
+        height: auto
+    }
+    .products .main-title {
+        margin-top: 112px;
+        font-size: 22px;
+        margin-bottom: 13px;
+    }
+    .product-row .product-image {
+        width: 100%;
+        height: 70%;
+    }
+    .products .product-description {
+        height: 69px;
+        margin-bottom: 10px;
+    }
+    .products .product-description {
+        margin-bottom: 30px;
+    }
+    .merrix-footer .love-products {
+        display: block;
+    }
+    .merrix-footer .love-products .like {
+        vertical-align: middle;
+        margin-bottom: 4px;
+    }
+    .merrix-footer {
+        margin-top: 10px;
+    }
+    .merrix-footer .contact-us {
+        margin-bottom: 30px;
+    }
+    .merrix-footer .footer-description {
+        margin-bottom: 30px;
+    }
+    .merrix-footer .social {
+        margin-top: 0;
+    }
+    .merrix-footer .nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+    .products .product-title {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(225px, .7fr));
+    }
+    .products .product-title {
+        font-size: 17px;
+    }
+    .desktop-break::after {
+        white-space: normal;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .grid {
+        display: flex;
+    }
+    .product-row .product-image {
+        width: 210px;
+        height: 260px;
+    }
+    .merrix-header .logo img,
+    .logo {
+        width: 96px;
+        height: 23px;
+    }
+    .merrix-page .banner {
+        height: 652px;
+    }
+    .merrix-header {
+        padding-top: 12px;
+    }
+    .utilities .nav-item .nav-link .phone-number {
+        display: none;
+    }
+    .utilities .nav-item .nav-link .phone {
+        font-size: 14px;
+        margin-left: auto;
+        margin-top: 0;
+    }
+    .utilities .nav .nav-item:first-child {
+        margin-right: 0;
+    }
+    .merrix-header .utilities .nav .nav-item {
+        margin-top: 5px;
+    }
+    .banner .banner-image {
+        width: 300px;
+        height: 184px;
+        margin: 85px 0 0 0;
+    }
+    .banner .banner-pre-title {
+        font-size: 18px;
+        margin: 0 auto 15px auto;
+    }
+    .banner .banner-title {
+        font-size: 25px;
+        line-height: 1.44;
+        margin: 0 auto 37px auto;
+    }
+    .banner .image-holder {
+        margin-top: 42px;
+    }
+    .banner .image-holder .d-none {
+        display: none;
+    }
+    .banner .row .col {
+        width: 149px;
+        height: 188px;
+    }
+    .products .main-title {
+        margin-top: 112px;
+        font-size: 22px;
+        margin-bottom: 13px;
+    }
+    .products .description {
+        font-size: 14px;
+        margin-bottom: 30px;
+        max-width: 300px;
+    }
+    .products .product-title {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .see-more:after {
+        content: "Samples" !important;
+        font-size: 14px;
+    }
+    .wrap {
+        flex-wrap: nowrap;
+        overflow: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .wrap::-webkit-scrollbar {
+        display: none;
+    }
+    .product-row .col {
+        margin-bottom: 30px;
+    }
+    .divider {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .merrix-footer .love-products {
+        font-size: 26px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .merrix-footer .love-products .like {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        vertical-align: middle;
+        margin-bottom: 4px;
+    }
+    .merrix-footer .contact-us {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .merrix-footer .footer-title {
+        font-size: 18px;
+    }
+    .merrix-footer .footer-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    a.footer-description.phone,
+    a.footer-description.mobile,
+    a.footer-description.email {
+        font-size: 18px;
+    }
+    .merrix-footer .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .merrix-footer .nav {
+        flex-direction: column;
+    }
+    .merrix-footer .footer-divider {
+        margin-top: 5px;
+    }
+    .merrix-footer .copyright-container {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .merrix-footer .footer-logo {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .products .main-title {
+        margin-top: 128px;
+    }
+}
+
+
+/*-----------------------------responsive-------------------------*/
